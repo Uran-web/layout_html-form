@@ -5,3 +5,7 @@
 .input {
   padding-bottom: 10px;
 }
+
+input:focus {
+  background-color: lightslategray;
+}
