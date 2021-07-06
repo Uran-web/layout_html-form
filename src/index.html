@@ -11,36 +11,38 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST"
       onsubmit="onSubmit()"
+      method="POST"
+      class="form"
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
         <div class="input">
           <label for="surname">Surname:</label>
           <input
-          type="text"
-          name="Surname"
-          id="surname">
+            type="text"
+            name="Surname"
+            id="surname"
+          >
         </div>
         <div class="input">
           <label for="name">Name:</label>
           <input
-          type="text"
-          name="Name"
-          id="name">
+            type="text"
+            name="Name"
+            id="name"
+          >
         </div>
         <div class="input">
           <label for="number">How old are You?</label>
           <input
             type="number"
-            value="12"
-            max="100"
             name="age"
             id="number"
+            value="12"
+            max="100"
           >
         </div>
         <div class="input">
@@ -48,7 +50,8 @@
           <input
             type="date"
             name="date"
-            id="date">
+            id="date"
+          >
         </div>
         <div>
           <label for="term">I accept the term of the agreement</label>
@@ -77,10 +80,10 @@
           <input
             type="password"
             name="password"
+            id="pass"
+            required
             minlength="8"
             maxlength="16"
-            required
-            id="pass"
           >
         </div>
       </fieldset>
@@ -90,18 +93,18 @@
           Do you love cats?
           <label for="yes">
             <input
-              id="yes"
               type="radio"
               name="like"
+              id="yes"
               value="yes"
             >
             Yes
           </label>
           <label for="no">
             <input
-              id="no"
               type="radio"
               name="like"
+              id="no"
               value="no"
             >
             No
@@ -119,8 +122,9 @@
           <label for="car">What are your favorite brand of cars?</label>
           <select
             name="cars"
+            id="car"
             multiple
-            id="car">
+          >
             <option value="" disabled>
             </option>
             <option value="BMW">BMW</option>
@@ -138,10 +142,10 @@
         <div class="input">
           <label for="comment">Comments:</label>
           <textarea
-          name="comment"
-          maxlength="50"
-          minlength="10"
-          id="comment"
+            name="comment"
+            id="comment"
+            maxlength="50"
+            minlength="10"
           >
           </textarea>
         </div>
@@ -155,5 +159,6 @@
       </fieldset>
       <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
